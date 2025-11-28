@@ -30,13 +30,13 @@ pipeline {
                     bat """
                     cd C:\\deploy-site\\site
 
-                    git config --global user.email "joanloule5@gmail.com"
-                    git config --global user.name "joanloule5"
+                    git config --global user.email "collinsyann8@gmail.com"
+                    git config --global user.name "collinsyann8-tech"
 
                     git add .
                     git commit -m "Auto-deploy by Jenkins" || echo Rien à commit
 
-                    git push https://%GITHUB_TOKEN%@github.com/joanloule5/portfolio.git main
+                    git push https://%GITHUB_TOKEN%@github.com/collinsyann8-tech/recette.git main
                     """
                 }
             }
